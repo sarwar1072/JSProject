@@ -1,0 +1,130 @@
+*{
+  padding: 0px;
+  margin:0px;
+  box-sizing: border-box;
+}
+body{
+  background-color: wheat;
+}
+.container{
+  width:700px;
+  height:450px;
+  background-color: white;
+  float:left;
+  box-sizing:border-box;
+  margin-right: 20px;
+  box-shadow: 4px 5px 15px black;
+  margin-top: 20px;
+  margin-left: 10px;
+}
+
+.fixed{
+  width:330px;
+  height: 300px;
+  float: left;
+  background-color: rgb(214, 226, 226);
+  box-sizing: border-box;
+  box-shadow: 4px 5px 15px black;
+  margin-top: 20px;
+
+}
+.h1tag{
+  text-align: center;
+  padding:10px  ;
+  color: black;
+}
+.img1{
+  width:100px;
+  height: 100px;
+  border-radius: 50%;
+  box-shadow: 4px 3px 15px black;
+  /* margin-left: 10px; */
+}
+.card-image{
+  width: 20%;
+  text-align: center;
+  box-shadow: 3px 3px 10px black;
+   margin-left:20px ;
+   padding: 20px;
+   float:left;
+}
+.card-title{
+  float:left;
+  margin-left: 100px;
+  padding:10px;
+
+}
+h3{
+  color:brown;
+  font-size: 1.3rem;
+  padding:7px;
+}
+
+.icon{
+  color:black;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background 0.5s;
+  padding: 3px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.icon:hover{
+  background-color: teal;
+  color: aliceblue;
+  border-radius: 20%;
+  
+}
+.inpt{
+  width: 40px;
+  background-color: yellow;
+  color:black;
+  padding: 4px;
+  font-size: 1rem;
+}
+.item{
+ font-size: 1.2rem; 
+}
+.clear{
+  clear: both;
+}
+.hr-style{
+  border: 3px solid black;
+ border-top: none;
+ border-left: none;
+ border-right: none;
+ margin-top: 10px;
+ margin-bottom: 10px;
+
+}
+
+h2{
+  color:brown;
+  font-size: 1.3rem;
+  padding:3px;
+  text-align: center;
+}
+
+.total{
+ text-align: center;
+}
+h4{
+  text-align: center;
+  color:brown;
+  font-size: 1.3rem;
+  padding:3px;
+}
+.inputcupon{
+  width: 90px;
+  background-color: rgb(207, 207, 189);
+  color:black;
+  padding: 4px;
+  font-size: 1rem;
+  margin-left: 70px;
+}
+.btn{
+  padding: 5px;
+  color: white;
+  background-color: rgb(193, 104, 104);
+}
