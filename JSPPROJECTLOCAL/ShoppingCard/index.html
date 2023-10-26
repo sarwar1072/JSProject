@@ -6,8 +6,8 @@
     <meta name="author" content="JS App" />
     <meta name="description" content="We love JavaScript" />
     <title>DOM - Document Object Model</title>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  </head>
-        <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <link rel="stylesheet" href="style.css">
         <body>
 <div class="container"> 
   <h1 class="h1tag">Shopping Card Details</h1>
@@ -19,9 +19,9 @@
       <h3>Apple</h3>
       <h3>Price: 200 tk</h3>
       <h3>Weight: 1kg </h3>
-      <i class="fa-solid fa-plus icon"></i>
-      <input class="inpt" type="button" value="0" >
-      <i class="fa-solid fa-minus icon"></i>
+      <i class="fa-solid fa-plus icon" onclick="increment('count')"></i>
+      <input class="inpt" type="button" id="count" value="0" >
+      <i class="fa-solid fa-minus icon" onclick="decrement('count')"></i>
       <span class="item">Your Item</span>
     </div>
   </div>
@@ -36,9 +36,9 @@
       <h3>Apple</h3>
       <h3>Price: 200 tk</h3>
       <h3>Weight: 1kg </h3>
-      <i class="fa-solid fa-plus icon"></i>
-      <input class="inpt" type="button" value="0" >
-      <i class="fa-solid fa-minus icon"></i>
+      <i class="fa-solid fa-plus icon" onclick="increment('count1')"></i>
+      <input class="inpt" type="button" id="count1" value="0" >
+      <i class="fa-solid fa-minus icon" onclick="decrement('count1')"></i>
       <span class="item">Your Item</span>
     </div>
   </div>
