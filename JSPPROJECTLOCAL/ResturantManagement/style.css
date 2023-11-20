@@ -1,0 +1,237 @@
+*{
+    padding:0px;
+    margin:0px;
+}
+.imgDiv{
+    background-image: url("Photos/1.jpeg");
+    background-attachment: fixed;
+    background-position:center ;
+    background-repeat: no-repeat;
+    background-size:cover ;
+    width: 100%;
+    height: 450px;
+    position:relative;
+}
+.overlay{
+    width:100%;
+    height:450px;
+    background-color: black;
+    position:absolute;
+    opacity:0.6;
+}
+.navbar-container{
+  width:85%;
+  margin: 0 auto;
+}
+.navbar{
+    padding: 17px;
+    background-color: white;
+    margin-top: 10px;
+    text-align: center;
+
+}
+.navbar a:hover{
+  background-color: green;
+  color:white;
+}
+.navbar a{
+    color:black;
+    font-size:bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 17px;
+}
+.dropdown{
+    position:relative;
+    display: inline ;
+}
+.dropdown-content{
+  position: absolute;
+  background-color: white;
+  right: 0px;
+  top:30px;
+  display: none;
+}
+.dropdown-content a{
+    display: block;
+    text-align: left;
+    
+}
+.dropdown:hover .dropdown-content{
+    display: block ;
+}
+
+.title{
+color:white;
+margin-top: 7rem;
+text-align: center;
+font-size: 1rem;
+}
+.stylehr{
+    width:50%;
+    border: 3px solid white;
+    margin:0 auto ;
+    
+}
+.toptitle{
+    color:white;
+margin-top: 1rem;
+text-align: center;
+font-size: 1rem;
+}
+.stylehr-2{
+    width:50%;
+    border: 3px solid white;
+    margin:0 auto ;
+    
+}
+.para{
+    color:white;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 1.4rem;
+    padding: 10px;;
+}
+.btn{
+ text-align: center;
+}
+.check-btn{
+  background-color: green;
+  color:white;
+  font-size: 1.3rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 10px 30px;
+  margin-top: 10px;
+}
+.check-btn:hover{
+    background-color: red;
+    color:black;
+}
+.clear{
+    clear:both;
+}
+/* category section */
+.category{
+    height:700px;
+    width:100%;
+    background-color: rgb(235, 216, 179);
+}
+.category-container{
+    width:100%;
+    margin:0 auto;
+    background-color: rgb(221, 221, 164);
+    height: 700px;
+}
+
+.category-leftdiv{
+    width:20%;
+    float:left;
+    padding-top: 40px;
+    padding: 20px;
+    margin-left:10px;
+    margin-top: 30px;
+
+}
+.cata-img{
+    width:100%;
+    border-radius:50%;
+
+}
+.cata-text{
+    text-align: center;
+    padding-top: 20px;
+}
+.cata-text-D{
+    color:gray;
+    font-size: 1.3rem;
+    margin-top: 20px;
+    text-align: center;
+}
+.categorytitle{
+    text-align: center;
+    color: rgb(54, 49, 49);
+    padding: 10px;
+}
+.btn-2{
+    margin-right: 5px;
+    text-align: center;
+}
+
+.check-btn-2{
+    background-color: green;
+  color:white;
+  font-size: 1.3rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 10px 30px;
+  margin-top: 90px;
+}
+
+.check-btn-2:hover{
+    background-color: red;
+    color:black;
+}
+.category-container-2{
+    width:100%;
+    margin:0 auto;
+    background-color: wheat;
+    height: 700px;
+}
+.leftdiv-2{
+    width:45%;
+    float:left;
+   box-sizing: border-box;
+
+}
+.middle-title{
+    margin-top: 60px;
+    color:rgb(121, 62, 62);
+    text-align: center;
+    padding: 5px;
+}
+
+.main-title{
+    color:rgb(122, 53, 53);
+    text-align: center;
+    padding: 5px;
+}
+.middle-title-2{   
+    color:rgb(121, 62, 62);
+    text-align: center;
+    padding: 5px;
+}
+
+.btn-3{
+    margin-right: 5px;
+    text-align: center;
+}
+
+.check-btn-3{
+    background-color: rgb(95, 220, 95);
+  color:white;
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 10px 30px;
+  margin-top: 5px;
+}
+
+.check-btn-3:hover{
+    background-color: red;
+    color:black;
+}
+.rightdiv{
+    width:45%;
+    float:left;
+   margin-top: 20px;
+   padding: 20px;
+   box-sizing: border-box;
+   margin-left: 80px;
+}
+.cata-img-2{
+  height: 350px;
+  
+}
+
+
