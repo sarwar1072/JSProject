@@ -1,0 +1,135 @@
+<div class="container mt-5">
+    <div class="card p-4 shadow-sm">
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link active" id="flight-tab" data-toggle="tab" href="#flight" role="tab" aria-controls="flight" aria-selected="true">Flight</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="hotel-tab" data-toggle="tab" href="#hotel" role="tab" aria-controls="hotel" aria-selected="false">Hotel</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="tour-tab" data-toggle="tab" href="#tour" role="tab" aria-controls="tour" aria-selected="false">Tour</a>
+            </li>
+        </ul>
+
+        <div class="tab-content mt-3" id="myTabContent">
+            <!-- Flight Search -->
+            <div class="tab-pane fade show active" id="flight" role="tabpanel" aria-labelledby="flight-tab">
+                <form method="post" action="/Search/Flights">
+                    <div class="row">
+                        <!-- One Way / Round Trip / Multi-City -->
+                        <div class="col-md-12 mb-3">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="tripType" id="oneWay" value="oneWay" checked>
+                                <label class="form-check-label" for="oneWay">One Way</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="tripType" id="roundTrip" value="roundTrip">
+                                <label class="form-check-label" for="roundTrip">Round Way</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="tripType" id="multiCity" value="multiCity">
+                                <label class="form-check-label" for="multiCity">Multi City</label>
+                            </div>
+                        </div>
+
+                        <!-- From -->
+                        <div class="col-md-6 mb-3">
+                            <label for="from">From</label>
+                            <input type="text" class="form-control" id="from" name="from" placeholder="City or Airport">
+                        </div>
+
+                        <!-- To -->
+                        <div class="col-md-6 mb-3">
+                            <label for="to">To</label>
+                            <input type="text" class="form-control" id="to" name="to" placeholder="City or Airport">
+                        </div>
+
+                        <!-- Journey Date -->
+                        <div class="col-md-6 mb-3">
+                            <label for="journeyDate">Journey Date</label>
+                            <input type="date" class="form-control" id="journeyDate" name="journeyDate">
+                        </div>
+
+                        <!-- Return Date (optional) -->
+                        <div class="col-md-6 mb-3">
+                            <label for="returnDate">Return Date</label>
+                            <input type="date" class="form-control" id="returnDate" name="returnDate" disabled>
+                        </div>
+
+                        <!-- Travelers & Class -->
+                        <div class="col-md-6 mb-3">
+                            <label for="travelers">Travelers, Class</label>
+                            <select class="form-control" id="travelers" name="travelers">
+                                <option>1 Traveler, Economy</option>
+                                <option>2 Travelers, Business</option>
+                                <option>3 Travelers, First Class</option>
+                            </select>
+                        </div>
+
+                        <!-- Search Button -->
+                        <div class="col-md-12 text-center">
+                            <button type="submit" class="btn btn-primary">Search</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <!-- Hotel Search -->
+            <div class="tab-pane fade" id="hotel" role="tabpanel" aria-labelledby="hotel-tab">
+                <!-- Hotel search fields go here -->
+            </div>
+
+            <!-- Tour Search -->
+            <div class="tab-pane fade" id="tour" role="tabpanel" aria-labelledby="tour-tab">
+                <!-- Tour search fields go here -->
+            </div>
+        </div>
+    </div>
+</div>
+<style>
+    .container {
+    max-width: 900px;
+}
+
+.card {
+    border-radius: 20px;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.nav-tabs {
+    border-bottom: none;
+}
+
+.nav-link {
+    color: #007bff;
+    font-weight: bold;
+}
+
+.nav-link.active {
+    background-color: transparent;
+    border-color: transparent;
+    color: #007bff;
+    border-bottom: 3px solid #007bff;
+}
+
+.form-control {
+    border-radius: 30px;
+}
+
+.btn-primary {
+    background-color: #fbbc05;
+    border-color: #fbbc05;
+    border-radius: 30px;
+    font-size: 18px;
+    padding: 10px 30px;
+}
+
+.btn-primary:hover {
+    background-color: #fbb600;
+    border-color: #fbb600;
+}
+
+</style>
