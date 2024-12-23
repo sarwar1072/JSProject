@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="Style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat minus ipsum ut non quam hic similique natus totam consectetur expedita, suscipit magni fugiat ea eaque rerum ipsam maiores, quasi excepturi?
+        </p>
+    </div>
+    <form method="get" action="/YourController/FilterByPrice">
+        <input type="range" id="priceRange" name="maxPrice" min="0" max="30000" step="500" value="20000" />
+        <button type="submit">Apply Filter</button>
+    </form>
+    <div id="hotelSearch" class="container mt-4">
+        <h3 class="text-center mb-4">Search for Hotels</h3>
+        <div class="row g-3">
+            <!-- Location Section -->
+            <div class="col-md-3">
+                <div class="card p-3 border-primary text-center">
+                    <div class="card-body">
+                        <h6 class="text-uppercase text-muted">City/Hotel/Resort/Area</h6>
+                        <input type="text" class="form-control text-center border-0 fw-bold" id="hotelLocation" name="location" placeholder="Enter location">
+                        <div id="HotelLocationList" class="dropdown-menu" style="display: none; position: absolute; width: 100%;">
+                            <!-- Suggested destinations will be appended dynamically -->
+                        </div>
+                        <small class="text-secondary">Example: Cox's Bazar</small>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Check-In Date Section -->
+            <div class="col-md-3">
+                <div class="card p-3 border-primary text-center">
+                    <div class="card-body">
+                        <h6 class="text-uppercase text-muted">Check In</h6>
+                        <input type="date" class="form-control text-center border-0 fw-bold" id="checkInDate" name="checkInDate">
+                        <small class="text-secondary">E.g., Friday</small>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Check-Out Date Section -->
+            <div class="col-md-3">
+                <div class="card p-3 border-primary text-center">
+                    <div class="card-body">
+                        <h6 class="text-uppercase text-muted">Check Out</h6>
+                        <input type="date" class="form-control text-center border-0 fw-bold" id="checkOutDate" name="checkOutDate">
+                        <small class="text-secondary">E.g., Sunday</small>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Guests Section -->
+            <div class="col-md-3">
+                <div class="card p-3 border-primary text-center">
+                    <div class="card-body">
+                        <h6 class="text-uppercase text-muted">Rooms & Guests</h6>
+                        <input type="number" class="form-control text-center border-0 fw-bold" id="Number" name="NumberOfGuests" min="1" placeholder="Guests" required>
+                        <small class="text-secondary">E.g., 1 Room, 2 Adults</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Submit Button -->
+        <div class="text-center mt-4">
+            <button type="submit" class="btn btn-warning px-5 fw-bold">Search Hotel</button>
+        </div>
+    </div>
+    
+    <a href="/Home/SearchHotel" class="btn btn-primary">
+        <i class="fas fa-book"></i> Book Now
+    </a>
+    
+</body>
+</html>
